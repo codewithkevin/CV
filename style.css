@@ -1,0 +1,26 @@
+:root {
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+.header {
+    background-color: #E5E3C9;
+    width: 20%;
+    height: 100vh;
+}
+
+.header .container{
+   padding: 80px;
+}
+
+.header .container .header-title {
+    font-size: 2rem;
+}
+
+.header .container .header-title
