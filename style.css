@@ -9,7 +9,8 @@
 }
 
 body{
-	background: linear-gradient(to right, #3525af, #9153c9);
+	/* background: linear-gradient(to right, #3525af, #9153c9); */
+	background-color: dodgerblue;
 }
 
 .resume{
@@ -43,27 +44,47 @@ body{
 	padding-bottom: 20px;
 }
 
-.title{
+.title {
+	padding: 15px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.title .name{
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: dodgerblue;
+}
+
+.title .role{
+	margin-top: 10px;
+	color: white;
+}
+
+
+.contact-title{
 	font-size: 24px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	padding-bottom: 10px;
-	color: #3525af;
+	color: dodgerblue;
 	position: relative;
 	text-align: right;
 	margin-bottom: 15px;
 }
 
-.title:before{
+.contact-title:before{
 	content: "";
 	position: absolute;
 	top: 35px;
 	right: 0;
-	width: 50px;
+	width: 90px;
 	height: 3px;
 	background: #3525af;
-}
+} 
 
 .left .icon{
 	font-size: 20px;
@@ -71,7 +92,7 @@ body{
 }
 
 .left .text{
-	color: #9153c9;
+	color: black;
 	text-transform: uppercase;
 	font-size: 13px;
 }
@@ -80,31 +101,42 @@ body{
 .left .text a {
 	text-decoration: none;
 	font-weight: 900px;
-	color: white;
+	color: darkblue;
 }
 
-.contact .li_wrap{
-	display: flex;
-	align-items: center;
-	width: 100%;
+.skills-title {
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	padding-bottom: 10px;
+	color: dodgerblue;
+	position: relative;
+	text-align: center;
 	margin-bottom: 15px;
+	cursor: pointer;
 }
 
-.contact .li_wrap .icon{
-	width: 50px;
-	height: 50px;
-	background: #fff;
-	border-radius: 15px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-right: 15px;
+.skills-title:before{
+	content: "";
+	position: absolute;
+	top: 35px;
+	width: 40px;
+	height: 3px;
+	background: white;
+
 }
 
-.contact .li_wrap .text{
-	width: calc(100% - 50px);
-	word-break: break-word;
-	color: #fff;
+.skills-title:hover{
+	color:white;
+}
+
+
+.skills-title .name{
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: dodgerblue;
 }
 
 .skills ul,
@@ -124,10 +156,16 @@ body{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
+
 .skills .li_wrap{
-	background: #fff;
+	background: dodgerblue;
+}
+
+.skills .li_wrap:hover{
+	background: #292b2f;
 }
 
 .skills .li_wrap .text,
@@ -150,35 +188,19 @@ body{
 
 .hobbies .li_wrap:hover .icon,
 .hobbies .li_wrap:hover .text{
-	color: #9153c9;
+	color: dodgerblue;
 }
 
-.header{
+.right .header{
 	background: #292b2f;
 	padding: 15px 30px;
 	color: #fff;
 	height: 240px;
 }
 
-.header .name{
-	font-size: 32px;
-	text-transform: uppercase;
-	font-weight: 700;
-	color: dodgerblue;
-}
-
-.header .role{
-	font-weight: 300;
-	font-size: 20px;
-}
-
-.header .about{
-	margin-top: 20px;
-	line-height: 26px;
-}
-
 .right_inner{
 	padding: 30px;
+	margin-top: -50px;
 	color: #292b2f;
 }
 
@@ -193,7 +215,7 @@ body{
 
 .right_inner .li_wrap .date {
     width: 125px;
-    color: #9153c9;
+    color: black;
 }
 
 .right_inner .li_wrap .info{
@@ -206,7 +228,7 @@ body{
 	text-transform: uppercase;
 	font-weight: 700;
 	letter-spacing: 2px;
-	color: #9153c9;
+	color: black;
 }
 
 .right_inner .li_wrap .info_com{
@@ -226,7 +248,7 @@ body{
 	left: 0;
 	width: 10px;
 	height: 10px;
-	background: #9153c9;
+	background: red;
 	border-radius: 50%;
 }
 
@@ -237,5 +259,5 @@ body{
 	left: 4px;
 	width: 2px;
 	height: 90%;
-	background: #9153c9;
+	background: red;
 }
